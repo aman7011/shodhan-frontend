@@ -90,7 +90,7 @@ const NavbarMain = () => {
           onClick={closeNavbar}
           className="navbar-brand-custom"
         >
-          Shodhan Ayurveda
+          Shodhan Ayurved
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
