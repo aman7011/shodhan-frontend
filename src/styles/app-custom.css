@@ -1,0 +1,220 @@
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e8f5e9 0%, #fffde4 100%);
+  padding-top: 20px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .app-wrapper {
+    padding-top: 10px;
+  }
+}
+
+.welcome-section {
+  margin-top: 60px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(47, 122, 62, 0.08);
+  padding: 40px 24px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Mobile responsive welcome section */
+@media (max-width: 768px) {
+  .welcome-section {
+    margin-top: 30px;
+    padding: 30px 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    max-width: none;
+  }
+  
+  .welcome-title {
+    font-size: 2.2rem;
+  }
+  
+  .welcome-tagline {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-section {
+    margin-top: 20px;
+    padding: 25px 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 12px;
+  }
+  
+  .welcome-title {
+    font-size: 1.8rem;
+  }
+  
+  .welcome-tagline {
+    font-size: 1rem;
+  }
+}
+
+.app-wrapper > .footer-section {
+  margin-top: auto;
+}
+
+
+.welcome-title {
+  color: #2f7a3e;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  overflow-wrap: break-word;
+}
+
+.welcome-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0 18px 0;
+}
+.welcome-divider span {
+  font-size: 2rem;
+  color: #43a047;
+  padding: 0 8px;
+}
+
+.welcome-tagline {
+  color: #388e3c;
+  font-size: 1.35rem;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  margin-bottom: 0;
+}
+
+
+.welcome-section .lead {
+  color: #555;
+  font-size: 1.25rem;
+}
+
+/* Enhanced Home Page Styles */
+.welcome-section {
+  margin-top: 60px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(47, 122, 62, 0.08);
+  padding: 40px 24px;
+  max-width: 800px; /* Increased from 500px */
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.home-content {
+  padding: 2rem 0;
+}
+
+.home-content .lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.home-content .btn {
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-content .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Floating Help Button */
+.floating-help-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(40, 167, 69, 0.4);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-help-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(40, 167, 69, 0.6);
+  background: linear-gradient(135deg, #218838 0%, #17a2b8 100%);
+}
+
+.floating-help-btn:active {
+  transform: scale(0.95);
+}
+
+/* Pulse animation for floating button */
+.floating-help-btn::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(40, 167, 69, 0.3);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .floating-help-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+  
+  .home-content .btn {
+    margin-bottom: 1rem;
+  }
+  
+  .welcome-section {
+    margin: 20px;
+    padding: 30px 20px;
+  }
+  
+  .welcome-title {
+    font-size: 2.2rem;
+  }
+}

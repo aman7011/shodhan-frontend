@@ -1,0 +1,188 @@
+.clinics-section {
+  background: linear-gradient(135deg, #f6fff6, #e8f5e9); /* match other pages' light green */
+  padding-bottom: 3rem;
+}
+
+.section-title {
+  animation: clinicFadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  color: #2f7a3e; 
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.clinic-card {
+  width: 20rem;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+@keyframes clinicFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95) translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.clinic-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(47, 122, 62, 0.12); /* green shadow tint */
+}
+
+.clinic-card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.badge-top {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #2f7a3e;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(47, 122, 62, 0.08);
+}
+/* Card title and text for clinics page */
+.clinic-card .card-title {
+  color: #2f7a3e;
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.clinic-card .card-text {
+  color: #555;
+  font-size: 1rem;
+}
+
+.clinic-card .btn-success {
+  background-color: #2f7a3e;
+  border-color: #2f7a3e;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.clinic-card .btn-success:hover {
+  background-color: #25612f;
+  border-color: #25612f;
+}
+
+.btn-success {
+  background-color: #2a5d34;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-success:hover {
+  background-color: #1f4326;
+}
+
+/* Clinic Image Carousel Styles */
+.clinic-carousel {
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.clinic-carousel-image {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.clinic-carousel .carousel-control-prev,
+.clinic-carousel .carousel-control-next {
+  background-color: rgba(47, 122, 62, 0.1);
+  width: 8%;
+  border-radius: 0;
+}
+
+.clinic-carousel .carousel-control-prev:hover,
+.clinic-carousel .carousel-control-next:hover {
+  background-color: rgba(47, 122, 62, 0.2);
+}
+
+.clinic-carousel .carousel-control-prev-icon,
+.clinic-carousel .carousel-control-next-icon {
+  background-color: rgba(47, 122, 62, 0.8);
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.clinic-carousel .carousel-indicators {
+  bottom: 5px;
+}
+
+.clinic-carousel .carousel-indicators [data-bs-target] {
+  background-color: rgba(47, 122, 62, 0.6);
+  border: 1px solid #fff;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.clinic-carousel .carousel-indicators .active {
+  background-color: #2f7a3e;
+}
+
+/* Mobile responsive styles for clinics */
+@media (max-width: 768px) {
+  .clinics-section {
+    padding-bottom: 2rem;
+  }
+  
+  .clinic-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .clinic-carousel-image,
+  .clinic-card img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  .clinic-card {
+    max-width: 100%;
+    margin: 0 10px 15px 10px;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .clinic-carousel-image,
+  .clinic-card img {
+    height: 160px;
+  }
+  
+  .clinic-card .card-body {
+    padding: 15px;
+  }
+  
+  .clinic-card .card-title {
+    font-size: 1.1rem;
+  }
+  
+  .clinic-card .card-text {
+    font-size: 0.9rem;
+  }
+}

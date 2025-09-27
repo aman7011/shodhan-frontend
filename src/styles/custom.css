@@ -1,0 +1,66 @@
+.card {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  color: #2f7a3e; /* Jiva green */
+}
+
+.card-text {
+  color: #555;
+}
+
+/* Page background and responsive layout */
+.app-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f5e9 0%, #fffde4 100%);
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.page-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(47, 122, 62, 0.08);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .app-bg {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  
+  .page-card {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+  
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .page-card {
+    margin: 5px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .container {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}

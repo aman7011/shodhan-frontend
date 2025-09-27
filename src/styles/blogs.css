@@ -1,0 +1,463 @@
+/* Blog Styles */
+.blogs-bg {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.blog-detail-bg {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+/* Blog Cards */
+.blog-card {
+  transition: all 0.3s ease;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.featured-blog {
+  border-left: 4px solid #ffc107 !important;
+}
+
+.featured-blog:hover {
+  border-left-color: #ffb300 !important;
+}
+
+/* Blog Detail Card */
+.blog-detail-card {
+  border-radius: 20px !important;
+  overflow: hidden;
+  background: white;
+}
+
+.blog-title {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.blog-meta {
+  border-bottom: 1px solid #e9ecef;
+  padding-bottom: 1rem;
+}
+
+.blog-summary {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%) !important;
+  border-left: 4px solid #28a745;
+}
+
+/* Blog Content Typography */
+.blog-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #495057;
+  max-width: none;
+}
+
+.blog-paragraph {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  line-height: 1.7;
+  color: #444;
+}
+
+.blog-heading {
+  font-weight: 700;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #28a745;
+  font-size: 1.5rem;
+}
+
+.blog-subheading {
+  font-weight: 600;
+  color: #28a745;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  border-left: 4px solid #28a745;
+  padding-left: 1rem;
+  background: rgba(40, 167, 69, 0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.blog-minor-heading {
+  font-weight: 600;
+  color: #28a745;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.blog-list {
+  padding-left: 2rem;
+  background: rgba(248, 249, 250, 0.8);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+}
+
+.blog-list-item {
+  margin-bottom: 0.75rem;
+  line-height: 1.7;
+  color: #555;
+  position: relative;
+}
+
+.blog-list-item::marker {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.blog-ordered-list {
+  padding-left: 2rem;
+  background: rgba(248, 249, 250, 0.8);
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+}
+
+.blog-ordered-list .blog-list-item::marker {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.blog-bold {
+  font-weight: 600;
+  color: #28a745;
+}
+
+.blog-italic {
+  font-style: italic;
+  color: #6c757d;
+}
+
+/* Content Sections */
+.blog-content h2:not(:first-child),
+.blog-content h3:not(:first-child) {
+  border-top: 1px solid #e9ecef;
+  padding-top: 2rem;
+  margin-top: 3rem;
+}
+
+/* Improve readability for long content */
+.blog-content p + h2,
+.blog-content p + h3,
+.blog-content ul + h2,
+.blog-content ul + h3,
+.blog-content ol + h2,
+.blog-content ol + h3 {
+  margin-top: 2.5rem;
+}
+
+/* Special formatting for key points */
+.blog-content p:has(strong:first-child) {
+  background: rgba(40, 167, 69, 0.05);
+  padding: 0.75rem 1rem;
+  border-left: 3px solid #28a745;
+  border-radius: 0 8px 8px 0;
+  margin: 1rem 0;
+}
+
+/* Better formatting for content sections */
+.blog-content h2::before {
+  content: "🌿 ";
+  margin-right: 0.5rem;
+}
+
+.blog-content h3::before {
+  content: "📌 ";
+  margin-right: 0.5rem;
+}
+
+/* Improve table-like content formatting */
+.blog-content p + p {
+  margin-top: 0.75rem;
+}
+
+/* Style for important information blocks */
+.blog-content p:contains("Primary Causes:"),
+.blog-content p:contains("Signs and Symptoms"),
+.blog-content p:contains("Treatment:"),
+.blog-content p:contains("Prevention:") {
+  font-weight: 600;
+  color: #28a745;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Better spacing for content blocks */
+.blog-content > * + h2,
+.blog-content > * + h3 {
+  margin-top: 2.5rem;
+}
+
+/* Enhanced list styling */
+.blog-content ul li {
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.blog-content ul li::before {
+  content: "✓";
+  color: #28a745;
+  font-weight: bold;
+  position: absolute;
+  left: -1.2rem;
+}
+
+/* Numbered list enhancement */
+.blog-content ol {
+  counter-reset: item;
+}
+
+.blog-content ol li {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.blog-content ol li::before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  font-weight: bold;
+  color: #28a745;
+}
+
+/* Blog Image Styles */
+.blog-image-container {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.blog-detail-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.blog-detail-image:hover {
+  transform: scale(1.05);
+}
+
+/* Enhanced content formatting */
+.blog-content h2 + p,
+.blog-content h3 + p {
+  font-weight: 500;
+  color: #555;
+}
+
+/* Highlight important sections */
+.blog-content p:contains("What Causes"),
+.blog-content p:contains("Signs and Symptoms"),
+.blog-content p:contains("Treatment"),
+.blog-content p:contains("Prevention") {
+  background: rgba(40, 167, 69, 0.08);
+  padding: 0.5rem 1rem;
+  border-left: 3px solid #28a745;
+  border-radius: 0 8px 8px 0;
+  font-weight: 500;
+}
+
+/* Better mobile responsiveness for images */
+@media (max-width: 768px) {
+  .blog-image-container {
+    height: 200px;
+  }
+  
+  .blog-detail-image {
+    object-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-image-container {
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+.blog-quote {
+  font-style: italic;
+  background: #f8f9fa !important;
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.blog-code {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.9rem;
+  background: #f8f9fa !important;
+  color: #e83e8c;
+}
+
+/* Blog Footer */
+.blog-footer {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Related Blogs */
+.related-blogs-section {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.related-blog-card {
+  transition: all 0.3s ease;
+  border-radius: 10px !important;
+}
+
+.related-blog-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Search Section */
+.search-section {
+  background: white;
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Featured Section */
+.featured-section {
+  background: linear-gradient(135deg, #fff8e1 0%, #fff3c4 100%);
+  border-radius: 15px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ffc107;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-title {
+    font-size: 2rem;
+  }
+  
+  .blog-content {
+    font-size: 1rem;
+  }
+  
+  .blog-heading {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .blog-subheading {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+  
+  .related-blogs-section,
+  .search-section,
+  .featured-section {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .blogs-bg,
+  .blog-detail-bg {
+    padding: 1rem 0;
+  }
+  
+  .blog-title {
+    font-size: 1.75rem;
+  }
+  
+  .blog-content {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .related-blogs-section,
+  .search-section,
+  .featured-section {
+    padding: 1rem;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Blog Categories/Tags */
+.blog-category {
+  background: #e9ecef;
+  color: #495057;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.blog-tag {
+  background: #d4edda;
+  color: #155724;
+  padding: 0.2rem 0.6rem;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* Loading States */
+.blog-skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Accessibility */
+.blog-card:focus {
+  outline: 2px solid #28a745;
+  outline-offset: 2px;
+}
+
+.related-blog-card:focus {
+  outline: 2px solid #28a745;
+  outline-offset: 2px;
+}

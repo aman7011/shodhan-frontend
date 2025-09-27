@@ -1,0 +1,169 @@
+/* Promo Modal Styles */
+.promo-modal .modal-dialog {
+  max-width: 800px;
+}
+
+.promo-modal-header {
+  background: linear-gradient(135deg, #f7faf7 0%, #fffde4 100%);
+  border-bottom: 2px solid #e8f5e9;
+  border-radius: 12px 12px 0 0;
+}
+
+.promo-modal-title {
+  color: #388e3c;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.promo-modal-body {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+.promo-modal-footer {
+  background: linear-gradient(135deg, #f7faf7 0%, #fffde4 100%);
+  border-top: 2px solid #e8f5e9;
+  border-radius: 0 0 12px 12px;
+  justify-content: center;
+}
+
+.promo-intro h5 {
+  font-weight: 600;
+  color: #2f7a3e;
+}
+
+.promo-card {
+  transition: all 0.3s ease;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.promo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.promo-card.border-success {
+  border: 2px solid #28a745 !important;
+}
+
+.promo-card.border-warning {
+  border: 2px solid #ffc107 !important;
+}
+
+.promo-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.promo-card .card-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.promo-card .card-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+.promo-features {
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.promo-features small {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+
+.promo-btn {
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.promo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btn-success.promo-btn {
+  background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.btn-success.promo-btn:hover {
+  background: linear-gradient(135deg, #218838 0%, #17a2b8 100%);
+}
+
+.btn-warning.promo-btn {
+  background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+  color: #000;
+}
+
+.btn-warning.promo-btn:hover {
+  background: linear-gradient(135deg, #e0a800 0%, #e8530a 100%);
+  color: #000;
+}
+
+.promo-footer {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e8f5e9;
+}
+
+/* Animation for modal entrance */
+.promo-modal .modal-content {
+  animation: modalSlideIn 0.5s ease-out;
+  border-radius: 15px;
+  border: none;
+  overflow: hidden;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .promo-modal-body {
+    padding: 1.5rem;
+  }
+  
+  .promo-icon {
+    font-size: 2.5rem;
+  }
+  
+  .promo-card .card-title {
+    font-size: 1.2rem;
+  }
+  
+  .promo-features {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* Close button styling */
+.promo-modal .btn-close {
+  background-size: 1.2em;
+  opacity: 0.7;
+}
+
+.promo-modal .btn-close:hover {
+  opacity: 1;
+}

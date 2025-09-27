@@ -1,0 +1,234 @@
+/* Enhanced styles for ServiceDetail component */
+.service-detail-bg {
+  background: linear-gradient(135deg, #e8f5e9 0%, #fff 100%);
+  min-height: 100vh;
+}
+
+.service-detail-card {
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(60, 180, 75, 0.12);
+  background: #fff;
+  transition: box-shadow 0.3s;
+}
+.service-detail-card:hover {
+  box-shadow: 0 12px 40px rgba(60, 180, 75, 0.18);
+}
+
+.service-detail-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.service-detail-img {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(60, 180, 75, 0.10);
+  object-fit: cover;
+}
+
+.service-detail-title {
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+}
+.service-detail-desc {
+  margin-bottom: 2rem;
+}
+
+.service-detail-desc.service-markdown-content {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  text-rendering: optimizeLegibility;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.service-detail-btn {
+  font-size: 1.15rem;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(60, 180, 75, 0.10);
+  transition: background 0.2s, transform 0.2s;
+}
+.service-detail-btn:hover, .service-detail-btn:focus {
+  background: #43a047;
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* ReactMarkdown content styling - moved to .service-detail-desc.service-markdown-content */
+
+.service-paragraph {
+  margin-bottom: 1.2rem;
+  text-align: justify;
+  word-wrap: break-word;
+  white-space: pre-line; /* Preserves line breaks and spaces */
+}
+
+.service-heading {
+  color: #388e3c !important;
+  font-weight: 700;
+  margin: 1.5rem 0 1rem 0;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #e8f5e9;
+  padding-bottom: 0.5rem;
+}
+
+.service-subheading {
+  color: #388e3c !important;
+  font-weight: 600;
+  margin: 1.2rem 0 0.8rem 0;
+  font-size: 1.2rem;
+}
+
+.service-list, .service-ordered-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.service-list-item {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.service-list-item::marker {
+  color: #388e3c;
+}
+
+.service-bold {
+  color: #2f7a3e !important;
+  font-weight: 700;
+}
+
+.service-italic {
+  color: #666;
+  font-style: italic;
+}
+
+/* Special styling for emojis and symbols */
+.service-markdown-content h1:first-child,
+.service-markdown-content h2:first-child,
+.service-markdown-content h3:first-child {
+  margin-top: 0;
+}
+
+/* Ensure emojis display properly - moved to .service-detail-desc.service-markdown-content */
+
+/* Better spacing for markdown sections */
+.service-detail-desc.service-markdown-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #e8f5e9 0%, #f0f8e8 100%);
+  border-radius: 12px;
+  border: 2px solid #c8e6c9;
+}
+
+.service-detail-desc.service-markdown-content h3 {
+  margin-top: 1.8rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  padding: 0.8rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #388e3c;
+}
+
+/* Enhanced list styling */
+.service-list {
+  background: #fafafa;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.service-list-item {
+  padding: 0.3rem 0;
+  font-size: 1.05rem;
+}
+
+/* Special styling for emoji content */
+.service-markdown-content li:first-child {
+  margin-top: 0.5rem;
+}
+
+.service-markdown-content li:last-child {
+  margin-bottom: 0.5rem;
+}
+
+/* Improve readability - moved to .service-detail-desc.service-markdown-content */
+
+/* Style for numbered lists with emojis */
+.service-markdown-content ol {
+  counter-reset: item;
+}
+
+.service-markdown-content ol li {
+  display: block;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+.service-markdown-content ol li:before {
+  content: counter(item, decimal) ". ";
+  counter-increment: item;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .service-detail-card {
+    padding: 1.5rem 1rem;
+    margin: 15px;
+    border-radius: 1rem;
+  }
+  
+  .service-detail-title {
+    font-size: 1.8rem;
+  }
+  
+  .service-detail-img {
+    max-width: 280px;
+  }
+  
+  .service-markdown-content {
+    font-size: 1rem;
+  }
+  
+  .service-heading {
+    font-size: 1.2rem;
+  }
+  
+  .service-subheading {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-detail-card {
+    padding: 1rem;
+    margin: 10px;
+    border-radius: 0.8rem;
+  }
+  
+  .service-detail-title {
+    font-size: 1.5rem;
+  }
+  
+  .service-detail-img {
+    max-width: 250px;
+  }
+  
+  .service-markdown-content {
+    font-size: 0.95rem;
+  }
+}

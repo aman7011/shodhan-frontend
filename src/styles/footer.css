@@ -1,0 +1,38 @@
+.footer-section {
+  background: linear-gradient(90deg, #e8f5e9 0%, #f6fff6 100%);
+  color: #2f7a3e;
+  font-family: 'Georgia', serif;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-section .container {
+  max-width: 900px;
+}
+
+.footer-brand {
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.footer-links a {
+  color: #2f7a3e;
+  text-decoration: none;
+  margin: 0 8px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.footer-links a:hover {
+  color: #25612f;
+  text-decoration: underline;
+}
+
+.footer-contact {
+  font-size: 1rem;
+  color: #555;
+}
+
+.footer-copyright {
+  font-size: 0.95rem;
+  color: #888;
+}
