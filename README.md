@@ -24,13 +24,13 @@ A modern React-based frontend application for Shodhan Ayurveda, providing a comp
 
 - Node.js (v18 or higher)
 - npm or yarn
-- Backend API server (see [shodhan-backend](https://github.com/your-username/shodhan-backend))
+- Backend API server (see [shodhan-backend](https://github.com/aman7011/shodhan-backend))
 
 ## 🚀 Quick Start
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/shodhan-frontend.git
+   git clone https://github.com/aman7011/shodhan-frontend.git
    cd shodhan-frontend
    ```
 
@@ -114,7 +114,7 @@ The application includes an admin dashboard with:
 
 ## 🌐 API Integration
 
-This frontend connects to the Shodhan Ayurveda backend API. See the [backend repository](https://github.com/your-username/shodhan-backend) for API documentation.
+This frontend connects to the Shodhan Ayurveda backend API. See the [backend repository](https://github.com/aman7011/shodhan-backend) for API documentation.
 
 ## 🎨 Customization
 
@@ -141,4 +141,4 @@ For support, email your-email@example.com or create an issue in this repository.
 
 ## 🔗 Related Repositories
 
-- [Shodhan Backend](https://github.com/your-username/shodhan-backend) - REST API server
+- [Shodhan Backend](https://github.com/aman7011/shodhan-backend) - REST API server
