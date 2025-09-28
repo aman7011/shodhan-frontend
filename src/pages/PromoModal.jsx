@@ -30,7 +30,7 @@ const PromoModal = ({ show, onHide }) => {
       >
         <Modal.Header closeButton className="promo-modal-header">
           <Modal.Title className="promo-modal-title">
-            🌿 Welcome to Shodhan Ayurveda! ✨
+            🌿 Welcome to Shodhan Ayurved! ✨
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="promo-modal-body">

@@ -85,7 +85,7 @@ function App() {
           element={
             <div className="welcome-section py-mobile-lg">
               <div className="container-mobile">
-                <h1 className="welcome-title text-mobile-xl text-center">Welcome to Shodhan Ayurveda</h1>
+                <h1 className="welcome-title text-mobile-xl text-center">Welcome to Shodhan Ayurved</h1>
                 <div className="welcome-divider text-center">
                   <span>🌿</span>
                 </div>

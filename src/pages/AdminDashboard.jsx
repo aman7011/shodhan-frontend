@@ -46,7 +46,7 @@ function AdminDashboard() {
               <Card.Body>
                 <div className="d-flex justify-content-between align-items-center">
                   <div>
-                    <h2 className="text-success mb-1">🌿 Shodhan Ayurveda Admin</h2>
+                    <h2 className="text-success mb-1">🌿 Shodhan Ayurved Admin</h2>
                     <p className="text-muted mb-0">
                       Welcome back, <strong>{getAdminUser()?.username || 'Admin'}</strong>
                     </p>

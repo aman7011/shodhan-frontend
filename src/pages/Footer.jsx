@@ -5,7 +5,7 @@ import "../styles/footer.css";
 const Footer = () => (
   <footer className="footer-section">
     <div className="container text-center py-4">
-      <div className="footer-brand mb-2">Shodhan Ayurveda</div>
+      <div className="footer-brand mb-2">Shodhan Ayurved</div>
       {/* <div className="footer-links mb-2">
         <NavLink to="/clinics">Clinics</NavLink> |
         <NavLink to="/diseases">Diseases</NavLink> |

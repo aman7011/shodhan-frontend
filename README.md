@@ -1,6 +1,6 @@
-# Shodhan Ayurveda - Frontend
+# Shodhan Ayurved - Frontend
 
-A modern React-based frontend application for Shodhan Ayurveda, providing a comprehensive platform for Ayurvedic healthcare services, disease information, and clinic management.
+A modern React-based frontend application for Shodhan Ayurved, providing a comprehensive platform for Ayurvedic healthcare services, disease information, and clinic management.
 
 ## 🌟 Features
 
@@ -114,7 +114,7 @@ The application includes an admin dashboard with:
 
 ## 🌐 API Integration
 
-This frontend connects to the Shodhan Ayurveda backend API. See the [backend repository](https://github.com/aman7011/shodhan-backend) for API documentation.
+This frontend connects to the Shodhan Ayurved backend API. See the [backend repository](https://github.com/aman7011/shodhan-backend) for API documentation.
 
 ## 🎨 Customization
 
